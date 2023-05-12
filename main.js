@@ -3,10 +3,10 @@ const colors = require("colors");
 const users = require("./users");
 const spamMessages = require("./messages");
 const coords = require("./coords");
+const blacklist = require("./blacklist");
 
 const config = {
-  delay: 1000, // milliseconds
-  blacklist: ["Lex1on", "real_joey56798_", "qbasty", "pistonmater", "fanlimdk", "vined_", "lerpietong", "BrawlerOP", "orion_ontop"],
+  blacklist: blacklist
 };
 
 const getRandomMessage = () => {
