@@ -1,0 +1,16 @@
+{
+    "name": "Exodus_spam",
+    "version": "1.0.0",
+    "description": "A powerful and efficient Minecraft bot for targeted messaging",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "author": "fanlimgames",
+    "license": "MIT",
+    "dependencies": {
+      "mineflayer": "^14.0.1",
+      "colors": "^1.4.0"
+    }
+  }
+  
