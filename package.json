@@ -9,7 +9,7 @@
     "author": "fanlimgames",
     "license": "MIT",
     "dependencies": {
-      "mineflayer": "^14.0.1",
+      "mineflayer": "^4.8.1",
       "colors": "^1.4.0"
     }
   }
