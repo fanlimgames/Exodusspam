@@ -31,7 +31,38 @@ const connectBot = (account, attempt = 1) => {
     skipValidation: true,
   });
 
+  let isEating = false; // Flag to track if the bot is currently eating
+  const eatDelay = 1000; // Delay between eating enchanted golden apples in milliseconds
+
+  const eatGap = () => {
+    setInterval(() => {
+      const hunger = bot.food;
+      console.log(`Bot hunger level: ${hunger}`);
+      if (hunger < 10 && !isEating) {
+        isEating = true;
+        const gapSlot = bot.inventory.findItem((item) => {
+          return item.name === "minecraft:golden_apple" && item.nbt.value.id.value === "minecraft:enchanted_golden_apple";
+        });
+        if (gapSlot) {
+          bot.equip(gapSlot, "hand");
+          bot.activateItem();
+          setTimeout(() => {
+            isEating = false;
+          }, eatDelay);
+        } else {
+          isEating = false;
+        }
+      }
+    }, 60000); // Check hunger level every 1 minute (60000 milliseconds)
+  };
+
+  const isInLobby = (bot) => {
+    return !bot || !bot.game || bot.game.levelType !== "default";
+  };
+
   bot.once("spawn", async () => {
+    eatGap(); // Call the eatGap function to enable gap eating behavior
+
     while (!forceStop) {
       await bot.waitForTicks(5);
       if (!isInLobby(bot)) {
@@ -62,7 +93,8 @@ const connectBot = (account, attempt = 1) => {
   });
 
   bot.on("end", (reason) => {
-    console.log(`Bot disconnected! Reason: ${reason}`);
+    console.log(`Bot disconnected!
+    Reason: ${reason}`);
     if (forceStop) return;
     console.log(`Attempting to reconnect in 5 seconds... (Attempt ${attempt})`);
     setTimeout(() => {
@@ -89,3 +121,4 @@ const isInLobby = (bot) => {
 };
 
 main();
+
