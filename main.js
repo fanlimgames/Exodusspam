@@ -1,9 +1,9 @@
 const mineflayer = require("mineflayer");
 const colors = require("colors");
-const users = require("./users");
-const spamMessages = require("./messages");
+const users = require("./users.json");
+const spamMessages = require("./messages.json");
 const coords = require("./coords");
-const blacklist = require("./blacklist");
+const blacklist = require("./blacklist.json");
 
 const config = {
   blacklist: blacklist
