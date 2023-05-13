@@ -5,17 +5,13 @@ const spamMessages = require("./messages.json");
 const coords = require("./coords");
 const blacklist = require("./blacklist.json");
 
-const config = {
-  blacklist: blacklist
-};
-
 const getRandomMessage = () => {
   return spamMessages[Math.floor(Math.random() * spamMessages.length)];
 };
 
 const getRandomCoords = coords.getRandomCoords;
 
-const blacklistRegex = new RegExp(config.blacklist.join("|"), "i");
+const blacklistRegex = new RegExp(blacklist.join("|"), "i");
 
 let forceStop = false;
 const bots = [];
@@ -47,9 +43,9 @@ const connectBot = (account, attempt = 1) => {
         const message = Math.random() < 0.9 ? getRandomMessage() : `Here are some leaked coordinates for you: ${getRandomCoords()}`;
         const styledUsername = colors.cyan(bot.username + " -> " + targetUsername + ":");
         const styledMessage = colors.green.bold(message.toString()); // Add 'bold' to make the message more prominent
-        console.log(`${styledUsername} ${styledMessage}`);
         if (!blacklistRegex.test(message)) {
           bot.chat(`/msg ${targetUsername} ${message}`);
+          console.log(`${styledUsername} ${styledMessage}`);
           await bot.waitForTicks(5);
         }
       }
