@@ -106,13 +106,6 @@ const connectBot = (account, attempt = 1) => {
     console.error("An error occurred:", err);
   });
 
-  bot.on("message", (message, position) => {
-    if (position === "system" || message.toString().startsWith("<")) return;
-    const styledUsername = colors.cyan("[CHAT]");
-    const styledMessage = colors.white(message.toString());
-    console.log(`${styledUsername} ${styledMessage}`);
-  });
-
   bots.push(bot);
 };
 
@@ -121,4 +114,3 @@ const isInLobby = (bot) => {
 };
 
 main();
-
