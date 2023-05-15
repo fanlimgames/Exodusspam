@@ -45,7 +45,7 @@ Enjoy exploring the 6b6t.org Minecraft world with your interactive and dynamic b
 
 Join our Exodus Discord server to be better: 🚀💪
 
-[![Discord](https://discordapp.com/api/guilds/1234567890/widget.png?style=banner4)](https://discord.gg/28n6FGcErT)
+[![Discord](https://discordapp.com/api/guilds/28n6FGcErT/widget.png?style=banner4)](https://discord.gg/28n6FGcErT)
 
 ## Project Stats
 
