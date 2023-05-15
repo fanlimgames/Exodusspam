@@ -41,7 +41,7 @@ Enjoy exploring the 6b6t.org Minecraft world with your interactive and dynamic b
 ## Contributing
 
 
-# Discord
+## Discord
 
 Join our Exodus Discord server to be better: 🚀💪
 
@@ -49,8 +49,9 @@ Join our Exodus Discord server to be better: 🚀💪
 
 ## Project Stats
 
-[![Downloads](https://img.shields.io/github/downloads/fanlimgames/Exodusspam/total.svg)](https://github.com/fanlimgames/Exodusspam/releases) ⬇️
-[![Stars](https://img.shields.io/github/stars/fanlimgames/Exodusspam.svg)](https://github.com/fanlimgames/Exodusspam/stargazers) ⭐️
+[![Code Downloads](https://img.shields.io/github/downloads/fanlimgames/Exodusspam/latest/total.svg)](https://github.com/fanlimgames/Exodusspam/releases) ⬇️
+[![Stars](https://img.shields.io/github/stars/fanlimgames/Exodusspam.svg)](https://github.com/fanlimgames/Exodusspam/stargazers)
+
 
 
 
