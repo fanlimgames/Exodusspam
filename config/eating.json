@@ -1,0 +1,5 @@
+{
+    "eatDelay": 1000,
+    "hungerTreshold": 10,
+    "intervalCheck": 60000
+}
