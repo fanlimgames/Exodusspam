@@ -3,7 +3,7 @@ const colors = require("colors");
 const users = require("./config/users.json");
 const spamMessages = require("./config/messages.json");
 const coords = require("./modules/coords");
-const blacklist = require("/config/blacklist.json");
+const blacklist = require("./config/blacklist.json");
 const { eatGap, isInLobby } = require("./modules/botBehaviors");
 
 const getRandomMessage = () => {
