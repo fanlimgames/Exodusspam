@@ -28,9 +28,9 @@ The project also includes additional files such as user account details, spam me
 ## Technologies Used
 
 - JavaScript
-- Node.js
-- mineflayer
-- colors
+- [Node.js](https://nodejs.org/)
+- [mineflayer](https://github.com/PrismarineJS/mineflayer)
+- [colors](https://github.com/Marak/colors.js)
 
 ## How to Use
 
