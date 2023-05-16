@@ -9,6 +9,7 @@
     <img src="https://img.shields.io/github/contributors/fanlimgames/exodusspam" alt="GitHub contributors"/>
     <img src="https://img.shields.io/github/languages/code-size/fanlimgames/exodusspam" alt="GitHub code size in bytes"/>
 </div>
+<br>
 
 Hello, fellow developers! 👋 I'm fanlimgames, and I'm passionate about building awesome Minecraft bots with JavaScript using the mineflayer library. In this repository, I've created a powerful and efficient bot implementation that can connect to the 6b6t.org Minecraft server and engage in targeted messaging with other players. 🤖🚀
 
@@ -53,9 +54,7 @@ Contributions are welcome! If you have any ideas, bug reports, or feature reques
 
 ## Discord
 
-Join our Exodus Discord server to be better: 🚀💪
-
-[![Discord](https://discordapp.com/api/guilds/1103748412886761612/widget.png?style=banner4)](https://discord.gg/28n6FGcErT)
+Join [our Exodus Discord server](https://discord.gg/28n6FGcErT) to be better: 🚀💪
 
 ## License
 
