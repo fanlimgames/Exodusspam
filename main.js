@@ -1,10 +1,10 @@
 const mineflayer = require("mineflayer");
 const colors = require("colors");
-const users = require("./users.json");
-const spamMessages = require("./messages.json");
-const coords = require("./coords");
-const blacklist = require("./blacklist.json");
-const { eatGap, isInLobby } = require("./botBehaviors");
+const users = require("./config/users.json");
+const spamMessages = require("./config/messages.json");
+const coords = require("./modules/coords");
+const blacklist = require("./config/blacklist.json");
+const { eatGap, isInLobby } = require("./modules/botBehaviors");
 
 const getRandomMessage = () => {
   return spamMessages[Math.floor(Math.random() * spamMessages.length)];

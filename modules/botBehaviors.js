@@ -1,6 +1,8 @@
-const EAT_DELAY = 1000; // Delay between eating enchanted golden apples in milliseconds
-const HUNGER_THRESHOLD = 10; // The hunger level at which the bot should eat
-const INTERVAL_CHECK = 60000; // Interval to check hunger level (1 minute)
+const config = require("../config/eating.json");
+
+const EAT_DELAY = config["eatDelay"]; // Delay between eating enchanted golden apples in milliseconds
+const HUNGER_THRESHOLD = config["hungerTreshold"]; // The hunger level at which the bot should eat
+const INTERVAL_CHECK = config["intervalCheck"]; // Interval to check hunger level (1 minute)
 let isBotEating = false; // Flag to track if the bot is currently eating
 
 const findEnchantedGoldenApple = (bot) => {
