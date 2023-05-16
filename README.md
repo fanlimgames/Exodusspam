@@ -1,4 +1,14 @@
-# Exodusspam
+<h1 align="center">Exodusspam</h1>
+<p align="center">Minecraft bot built with JavaScript using the mineflayer library</p>
+
+<div align="center">
+<img src="https://img.shields.io/github/stars/fanlimgames/Exodusspam.svg" alt="Stars"/>
+
+<img src="https://img.shields.io/github/last-commit/fanlimgames/exodusspam" alt="GitHub last commit"/>
+    <img src="https://img.shields.io/github/commit-activity/w/fanlimgames/exodusspam" alt="GitHub commit activity"/>
+    <img src="https://img.shields.io/github/contributors/fanlimgames/exodusspam" alt="GitHub contributors"/>
+    <img src="https://img.shields.io/github/languages/code-size/fanlimgames/exodusspam" alt="GitHub code size in bytes"/>
+</div>
 
 Hello, fellow developers! 👋 I'm fanlimgames, and I'm passionate about building awesome Minecraft bots with JavaScript using the mineflayer library. In this repository, I've created a powerful and efficient bot implementation that can connect to the 6b6t.org Minecraft server and engage in targeted messaging with other players. 🤖🚀
 
@@ -25,12 +35,11 @@ The project also includes additional files such as user account details, spam me
 
 1. Clone the repository to your local machine. 🖥️
 2. Install the required dependencies using `npm install`. ⚙️
-3. Customize the `users.json` file with your Minecraft account details. ✍️
-4. Add your own spam messages and coordinates to the respective files. 📝
-5. By default, the chat spam feature is disabled. To enable it, set `enableMessageSpam` to `true` in the `users.json` file. 🚀
-6. Run the bot using `node main.js`. 🏃‍♂️
-7. Sit back and watch as the bot connects to the 6b6t.org server and starts engaging with other players. 🎮🌍
-8. If you wish to disable the chat spam feature during runtime, simply set `enableMessageSpam` to `false` in the `users.json` file and restart the bot. ⛔️🗯️
+3. Customize all files in the `config` directory. Most importantly the `users.json` file with your Minecraft account details. ✍️
+4. By default, the chat spam feature is disabled. To enable it, set `enableMessageSpam` to `true` in the `users.json` file. 🚀
+5. Run the bot using `node main.js`. 🏃‍♂️
+6. Sit back and watch as the bot connects to the 6b6t.org server and starts engaging with other players. 🎮🌍
+7. If you wish to disable the chat spam feature during runtime, simply set `enableMessageSpam` to `false` in the `users.json` file and restart the bot. ⛔️🗯️
 
 Feel free to experiment and customize the bot's behavior by modifying the code. You can add new features, enhance the message selection logic, or integrate additional functionality from the mineflayer library.
 
@@ -40,28 +49,13 @@ Enjoy exploring the 6b6t.org Minecraft world with your interactive and dynamic b
 ---
 ## Contributing
 
+Contributions are welcome! If you have any ideas, bug reports, or feature requests, please open an issue on the GitHub repository. Feel free to fork the repository, make improvements, and submit pull requests. 🙌🔧
 
 ## Discord
 
 Join our Exodus Discord server to be better: 🚀💪
 
 [![Discord](https://discordapp.com/api/guilds/1103748412886761612/widget.png?style=banner4)](https://discord.gg/28n6FGcErT)
-
-## Project Stats
-
-[![Downloads](https://img.shields.io/github/downloads/fanlimgames/Exodusspam/total.svg)](https://github.com/fanlimgames/Exodusspam/releases) ⬇️
-[![Stars](https://img.shields.io/github/stars/fanlimgames/Exodusspam.svg)](https://github.com/fanlimgames/Exodusspam/stargazers)
-
-
-
-
-
-
-
-
-
-
-Contributions are welcome! If you have any ideas, bug reports, or feature requests, please open an issue on the GitHub repository. Feel free to fork the repository, make improvements, and submit pull requests. 🙌🔧
 
 ## License
 
